@@ -1,14 +1,9 @@
-## Membuat Aplikasi Bacaan Sholat dengan Flutter
-Aplikasi berisikan Niat-niat Sholat Wajib, Bacaan Sholat, doa-doa sehari
-
-
-
-****If you use the Source Code, please make sure to credit and backlink to [Azhar Rivaldi](https://rivaldi48.blogspot.com/)***
+## Membuat Aplikasi Bacaan Sehari-hari dengan Flutter
+Aplikasi niat-niat Sholat Wajib, Bacaan Sholat, doa-doa sehari
 
 ## 👇 Click For Support Me : 
-<img src="https://github.com/AzharRivaldi/AzharRivaldi/blob/master/Support%20Here.png" width="200" height="200"></a>
+<img src="https://www.instagram.com/hisyam018a?igsh=MWl4b3Q2bHNiOXUyMg==" width="200" height="200"></a>
 
-## 📄 License
 
 ```
 Copyright (C) Hisyam akmalul falah
