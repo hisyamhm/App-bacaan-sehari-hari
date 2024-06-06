@@ -1,9 +1,6 @@
 ## Membuat Aplikasi Bacaan Sehari-hari dengan Flutter
 Aplikasi niat-niat Sholat Wajib, Bacaan Sholat, doa-doa sehari
 
-## 👇 Click For Support Me : 
-<img src="https://www.instagram.com/hisyam018a?igsh=MWl4b3Q2bHNiOXUyMg==" width="200" height="200"></a>
-
 
 ```
 Copyright (C) Hisyam akmalul falah
