@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:bacaan_sholat/page/juz_amma_page.dart';
 import 'package:bacaan_sholat/page/doa_page.dart';
 import 'package:bacaan_sholat/page/bacaan_sholat_page.dart';
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
@@ -28,25 +29,6 @@ class _MainPageState extends State<MainPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 380,
-                  height: 50,
-                  color: Colors.green,
-                  child: Center(
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'TUNTUNAN BACAAN SHOLAT & DOA-DOA',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 40),
                 Container(
                   margin: EdgeInsets.all(10),
                   child: Expanded(
@@ -130,6 +112,35 @@ class _MainPageState extends State<MainPage> {
                           SizedBox(height: 10),
                           Text(
                             "Doa-doa Sehari-hari",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: Expanded(
+                    child: InkWell(
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => JuzAmma()));
+                      },
+                      child: Column(
+                        children: [
+                          Image(
+                            image: AssetImage("assets/images/surat_juz_amma.jpg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Juz_Amma",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),

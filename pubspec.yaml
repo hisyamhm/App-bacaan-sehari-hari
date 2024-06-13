@@ -58,10 +58,13 @@ flutter:
    - assets/images/doa_sehari.jpg
    - assets/images/tata_sholat.png
    - assets/images/bg_3.png
+   - assets/images/surat_juz_amma.jpg
+   - assets/images/ngaji.jpg
 
    - assets/data/bacaanshalat.json
    - assets/data/niatshalat.json
    - assets/data/doa.json
+   - assets/data/juzamma.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

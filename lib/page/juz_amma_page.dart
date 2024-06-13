@@ -1,27 +1,27 @@
 import 'dart:convert';
-import 'package:bacaan_sholat/model/model_doa.dart';
+import 'package:bacaan_sholat/model/model_juz_amma.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class Doa extends StatefulWidget {
-  const Doa({Key? key}) : super(key: key);
+class JuzAmma extends StatefulWidget {
+  const JuzAmma({Key? key}) : super(key: key);
 
   @override
-  _DoaState createState() => _DoaState();
+  _JuzAmmaState createState() => _JuzAmmaState();
 }
 
-class _DoaState extends State<Doa> {
-  Future<List<ModelDoa>> ReadJsonData() async {
+class _JuzAmmaState extends State<JuzAmma> {
+  Future<List<ModelJuz>> ReadJsonData() async {
     final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/doa.json');
+        await rootBundle.rootBundle.loadString('assets/data/juzamma.json');
     final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => ModelDoa.fromJson(e)).toList();
+    return list.map((e) => ModelJuz.fromJson(e)).toList();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Color.fromARGB(255, 197, 197, 197),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +41,7 @@ class _DoaState extends State<Doa> {
                     margin: EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color.fromARGB(213, 255, 251, 0)),
+                        color: Color.fromARGB(210, 255, 174, 0)),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -51,14 +51,14 @@ class _DoaState extends State<Doa> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Tuntunan Doa-doa",
+                              "Bacaan Juz Amma",
                               style: TextStyle(
                                   color: const Color.fromARGB(255, 0, 0, 0),
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Doa Sehari-hari, sudah hafal belum?",
+                              "Bacaan Sehari-hari, sudah hafal belum",
                               style: TextStyle(
                                   color: const Color.fromARGB(255, 0, 0, 0),
                                   fontSize: 12,
@@ -77,7 +77,7 @@ class _DoaState extends State<Doa> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/doa_sehari.jpg",
+                      "assets/images/ngaji.jpg",
                       width: 330,
                       height: 200,
                       fit: BoxFit.fill,
@@ -95,7 +95,7 @@ class _DoaState extends State<Doa> {
                     if (data.hasError) {
                       return Center(child: Text("${data.error}"));
                     } else if (data.hasData) {
-                      var items = data.data as List<ModelDoa>;
+                      var items = data.data as List<ModelJuz>;
                       return ListView.builder(
                           itemCount: items == null ? 0 : items.length,
                           itemBuilder: (context, index) {
